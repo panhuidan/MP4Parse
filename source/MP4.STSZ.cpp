@@ -43,11 +43,23 @@ std::string STSZ::description( void )
     std::ostringstream o;
     
     o << "MP4 Atom:           " << this->_type << "\n";
+	o << "                      - Sample count:" << this->_sample_count << "\n";
     
     return o.str();
 }
 
 void STSZ::processData( MP4::BinaryStream * stream, size_t length )
 {
-    stream->ignore( length );
+    //stream->ignore( length );
+
+	size_t parsedLength;
+
+	uint32_t data = stream->readBigEndianUnsignedInteger();
+
+	uint32_t sample_size = stream->readBigEndianUnsignedInteger();
+	_sample_count = stream->readBigEndianUnsignedInteger();
+
+	parsedLength = 12;
+
+	stream->ignore(length - parsedLength);
 }

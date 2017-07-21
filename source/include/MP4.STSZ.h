@@ -44,7 +44,8 @@ namespace MP4
             
             
         protected:
-            
+
+			uint32_t _sample_count;
             
         public:
             

@@ -49,5 +49,6 @@ std::string MDAT::description( void )
 
 void MDAT::processData( MP4::BinaryStream * stream, size_t length )
 {
-    stream->ignore( length );
+    //stream->ignore( length );
+	stream->seekg(length, std::ios::cur);
 }

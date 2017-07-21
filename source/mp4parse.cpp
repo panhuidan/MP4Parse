@@ -42,7 +42,8 @@ int main( int argc, char * argv[] )
     //}
     
     //parser = new MP4::Parser( argv[ 1 ] );
-	parser = new MP4::Parser("D:\\Data\\GarminFit2\\DCIM\\103_VIRB\\VIRB0176.MP4");
+	//parser = new MP4::Parser("D:\\Data\\GarminFit2\\DCIM\\103_VIRB\\VIRB0176.MP4");
+	parser = new MP4::Parser("D:\\Data\\Sample4²âÊÔ_ÖØÇì_Â¼Ïñ\\1201\\video\\20170705\\VIRB0824.MP4");
     
     delete parser;
     

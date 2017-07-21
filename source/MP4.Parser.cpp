@@ -315,10 +315,10 @@ Parser::Parser( char * filename )
         {
             atom = ( MP4::Atom * )( new MP4::TRUN() );
         }
-        else if( strcmp( type, "udta" ) == 0 )
-        {
-            atom = ( MP4::Atom * )( new MP4::UDTA() );
-        }
+        //else if( strcmp( type, "udta" ) == 0 )
+        //{
+        //    atom = ( MP4::Atom * )( new MP4::UDTA() );
+        //}
         else if( strcmp( type, "vmhd" ) == 0 )
         {
             atom = ( MP4::Atom * )( new MP4::VMHD() );
@@ -337,7 +337,7 @@ Parser::Parser( char * filename )
         }
         
         parentAtom->addChild( atom );
-        
+
         ( ( MP4::DataAtom * )atom )->processData( this->_stream, dataLength );
     }
     
