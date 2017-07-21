@@ -36,12 +36,13 @@ int main( int argc, char * argv[] )
 {
     MP4::Parser * parser;
     
-    if( argc != 2 )
-    {
-        std::cout << "Usage: " << argv[ 0 ] << " FILENAME\n";
-    }
+    //if( argc != 2 )
+    //{
+    //    std::cout << "Usage: " << argv[ 0 ] << " FILENAME\n";
+    //}
     
-    parser = new MP4::Parser( argv[ 1 ] );
+    //parser = new MP4::Parser( argv[ 1 ] );
+	parser = new MP4::Parser("D:\\Data\\GarminFit2\\DCIM\\103_VIRB\\VIRB0176.MP4");
     
     delete parser;
     
