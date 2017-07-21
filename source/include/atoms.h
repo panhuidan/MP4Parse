@@ -86,6 +86,7 @@
 #include "MP4.TREX.h"
 #include "MP4.TRUN.h"
 #include "MP4.UDTA.h"
+#include "MP4.UUID.h"
 #include "MP4.VMHD.h"
 #include "MP4.XML.h"
 
