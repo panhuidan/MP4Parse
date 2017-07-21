@@ -132,6 +132,7 @@
     <ClCompile Include="..\source\MP4.TRUN.cpp" />
     <ClCompile Include="..\source\MP4.UDTA.cpp" />
     <ClCompile Include="..\source\MP4.UnknownAtom.cpp" />
+    <ClCompile Include="..\source\MP4.UUID.cpp" />
     <ClCompile Include="..\source\MP4.VMHD.cpp" />
     <ClCompile Include="..\source\MP4.XML.cpp" />
     <ClCompile Include="..\source\mp4parse.cpp" />
@@ -194,6 +195,7 @@
     <ClInclude Include="..\source\include\MP4.TRUN.h" />
     <ClInclude Include="..\source\include\MP4.UDTA.h" />
     <ClInclude Include="..\source\include\MP4.UnknownAtom.h" />
+    <ClInclude Include="..\source\include\MP4.UUID.h" />
     <ClInclude Include="..\source\include\MP4.VMHD.h" />
     <ClInclude Include="..\source\include\MP4.XML.h" />
     <ClInclude Include="..\source\include\stdc.h" />

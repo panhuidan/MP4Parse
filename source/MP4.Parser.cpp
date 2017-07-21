@@ -118,6 +118,7 @@ Parser::Parser( char * filename )
             || strcmp( type, "stbl" ) == 0
             || strcmp( type, "traf" ) == 0
             || strcmp( type, "trak" ) == 0
+			|| strcmp(type, "udta") == 0
         )
         {
             containerAtom = new MP4::ContainerAtom( type );
@@ -326,6 +327,10 @@ Parser::Parser( char * filename )
         {
             atom = ( MP4::Atom * )( new MP4::XML() );
         }
+		else if (strcmp(type, "uuid") == 0)
+		{
+			atom = (MP4::Atom *)(new MP4::UUID());
+		}
         else
         {
             atom = new MP4::UnknownAtom( type );

@@ -189,6 +189,9 @@
     <ClCompile Include="..\source\mp4parse.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="..\source\MP4.UUID.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\source\include\atoms.h">
@@ -375,6 +378,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="..\source\include\types.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\source\include\MP4.UUID.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
