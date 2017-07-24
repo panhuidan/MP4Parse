@@ -51,7 +51,8 @@ std::string UUID::description(void)
 void UUID::processData(MP4::BinaryStream * stream, size_t length)
 {
     //stream->ignore( length );
-	char* uuid = (char*)malloc(length);
+	char* uuid = (char*)malloc(length+1);
+	memset(uuid, 0, length + 1);
 	stream->read(uuid, length);
 	_uuid = uuid;
 	free(uuid);
